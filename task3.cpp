@@ -14,25 +14,25 @@ int main()
 	int i;
 	double R1, R2;
 
-	for(i = 0; i < 3; i++)
+	for (i = 0; i < 3; i++)
 	{
-		cout << "Vvedite bolshiy i maliy radiusy" << endl;
+		cout << "Введите больший и малый радиусы" << endl;
 		cin >> R1 >> R2;
-	
+
 		if (R1 > R2)
 		{
 			if (R1 >= 0 && R2 >= 0)
 			{
-				cout << "ploshad kruga ravna " << RingS(R1, R2) << endl << endl;
+				cout << "Площадь круга равна " << RingS(R1, R2) << endl << endl;
 			}
-			else 
+			else
 			{
-				cout << "Radiusy dojni bit bolshe ili ravny nylu." << endl << endl;
+				cout << "Радиусы должны быть больше или равны нулю." << endl << endl;
 			}
 		}
 		else
 		{
-			cout << "Perviy radius doljen bit bolshe vtorogo. Poprobyite esche raz, sledya ysloviam." << endl << endl;
+			cout << "Перый радиусы должен быть больше второго. Попробуйте еще раз, следуя условиям." << endl << endl;
 		}
 	}
 
