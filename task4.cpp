@@ -3,21 +3,21 @@
 
 using namespace std;
 
-int QuaterS( double x, double y)
+int QuaterS(double x, double y)
 {
 	if (x > 0 && y > 0)
 	{
 		return 1;
 	}
-		if (x < 0 && y > 0)
+	if (x < 0 && y > 0)
 	{
 		return 2;
 	}
-		if (x < 0 && y < 0)
+	if (x < 0 && y < 0)
 	{
 		return 3;
 	}
-		if (x > 0 && y < 0)
+	if (x > 0 && y < 0)
 	{
 		return 4;
 	}
@@ -28,22 +28,22 @@ int main()
 	setlocale(0, "");
 	int i;
 	double x, y;
-	
-	for(i = 0; i < 3; i++)
+
+	for (i = 0; i < 3; i++)
 	{
-		cout <<"Vvedite coordinati to4ki" << endl;
+		cout << "Введите координаты точки" << endl;
 		cin >> x >> y;
-		
+
 		if (x != 0 && y != 0)
 		{
-			cout <<"4etvert: " << QuaterS(x, y) << endl;
+			cout << "Четверть: " << QuaterS(x, y) << endl;
 		}
 		else
 		{
-			cout <<"Vvedennye koordinaty doljni bit nenylevymi. Poprobyite esche raz, sledya ysloviam. " << endl;
+			cout << "Введенные координаты должны быть ненулевыми. Попробуйте еще раз, следуя условиям." << endl;
 		}
 	}
-	
+
 	system("pause");
 	return 0;
 }
